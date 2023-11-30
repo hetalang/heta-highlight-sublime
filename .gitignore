@@ -1,0 +1,5 @@
+*.sublime-syntax
+*.sublime-settings
+/messages
+messages.json
+
