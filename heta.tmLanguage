@@ -353,11 +353,6 @@
 		<dict>
 			<key>captures</key>
 			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>space.heta</string>
-				</dict>
 				<key>2</key>
 				<dict>
 					<key>name</key>
@@ -393,13 +388,6 @@
 				<dict>
 					<key>name</key>
 					<string>keyword.control.reserved.heta</string>
-				</dict>
-				<key>4</key>
-				<dict>
-					<key>name</key>
-					<string>space.heta</string>
-					<key>patterns</key>
-					<array/>
 				</dict>
 				<key>5</key>
 				<dict>
@@ -478,7 +466,7 @@
 			<key>match</key>
 			<string>.+</string>
 			<key>name</key>
-			<string>invalid.illegal</string>
+			<string>invalid.illegal.heta</string>
 		</dict>
 	</dict>
 	<key>scopeName</key>
