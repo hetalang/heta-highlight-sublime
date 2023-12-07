@@ -335,13 +335,8 @@
 				</dict>
 				<key>6</key>
 				<dict>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#dict</string>
-						</dict>
-					</array>
+					<key>name</key>
+					<string>entity.other.heta</string>
 				</dict>
 			</dict>
 			<key>match</key>

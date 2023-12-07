@@ -78,9 +78,7 @@
 					"name": "keyword.control.reserved.heta"
 				},
 				"6": {
-					"patterns": [
-						{ "include": "#dict" }
-					]
+					"name": "entity.other.heta"
 				}
 			}
 		},
