@@ -325,6 +325,10 @@
               </dict>
               <dict>
                 <key>include</key>
+                <string>#null</string>
+              </dict>
+              <dict>
+                <key>include</key>
                 <string>#number</string>
               </dict>
               <dict>
@@ -348,6 +352,13 @@
         <string>constant.language.heta</string>
         <key>match</key>
         <string>(true)|(false)</string>
+      </dict>
+      <key>null</key>
+      <dict>
+        <key>name</key>
+        <string>constant.language.heta</string>
+        <key>match</key>
+        <string>null</string>
       </dict>
       <key>string</key>
       <dict>
@@ -404,6 +415,10 @@
               <dict>
                 <key>include</key>
                 <string>#boolean</string>
+              </dict>
+              <dict>
+                <key>include</key>
+                <string>#null</string>
               </dict>
               <dict>
                 <key>include</key>
