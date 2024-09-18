@@ -365,7 +365,7 @@
         <key>name</key>
         <string>string.other.heta</string>
         <key>match</key>
-        <string>".*?"|[^"]*?(?=(//|/\*|,|}|]|$))</string>
+        <string>(?&lt;!\\)".*?(?&lt;!\\)"|[^"]*?(?=(//|/\*|,|}|]|$))</string>
       </dict>
       <key>array</key>
       <dict>
