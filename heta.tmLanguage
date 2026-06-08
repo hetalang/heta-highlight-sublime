@@ -76,7 +76,7 @@
           <key>1</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.short.heta</string>
+            <string>keyword.operator.assignment.heta</string>
           </dict>
           <key>2</key>
           <dict>
@@ -98,12 +98,12 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>keyword.operator.short.heta</string>
+            <string>keyword.operator.assignment.heta</string>
           </dict>
           <key>3</key>
           <dict>
             <key>name</key>
-            <string>id.heta</string>
+            <string>variable.parameter.heta</string>
           </dict>
         </dict>
         <key>patterns</key>
@@ -269,7 +269,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>dictionary.begin.heta</string>
+            <string>punctuation.section.block.begin.heta</string>
           </dict>
         </dict>
         <key>end</key>
@@ -279,7 +279,7 @@
           <key>0</key>
           <dict>
             <key>name</key>
-            <string>dictionary.end.heta</string>
+            <string>punctuation.section.block.end.heta</string>
           </dict>
         </dict>
         <key>name</key>
@@ -304,7 +304,7 @@
               <key>1</key>
               <dict>
                 <key>name</key>
-                <string>variable.other.key.heta</string>
+                <string>variable.other.property.heta</string>
               </dict>
             </dict>
             <key>end</key>
@@ -329,6 +329,10 @@
               </dict>
               <dict>
                 <key>include</key>
+                <string>#unitExpression</string>
+              </dict>
+              <dict>
+                <key>include</key>
                 <string>#number</string>
               </dict>
               <dict>
@@ -346,19 +350,26 @@
         <key>match</key>
         <string>[-+]?[0-9]+[.]?[0-9]*([eE][-+]?[0-9]+)?\b</string>
       </dict>
+      <key>unitExpression</key>
+      <dict>
+        <key>name</key>
+        <string>string.other.expression.heta</string>
+        <key>match</key>
+        <string>[-+]?[0-9]+[.]?[0-9]*([eE][-+]?[0-9]+)?(?:\s*/\s*[A-Za-z_][A-Za-z0-9_]*)+\b</string>
+      </dict>
       <key>boolean</key>
       <dict>
         <key>name</key>
         <string>constant.language.heta</string>
         <key>match</key>
-        <string>(true)|(false)</string>
+        <string>\b(true|false)\b</string>
       </dict>
       <key>null</key>
       <dict>
         <key>name</key>
         <string>constant.language.heta</string>
         <key>match</key>
-        <string>null</string>
+        <string>\bnull\b</string>
       </dict>
       <key>string</key>
       <dict>
@@ -422,6 +433,10 @@
               </dict>
               <dict>
                 <key>include</key>
+                <string>#unitExpression</string>
+              </dict>
+              <dict>
+                <key>include</key>
                 <string>#number</string>
               </dict>
               <dict>
@@ -451,7 +466,7 @@
       <key>title</key>
       <dict>
         <key>name</key>
-        <string>string.quoted.heta</string>
+        <string>string.quoted.single.heta</string>
         <key>match</key>
         <string>'.*?'</string>
       </dict>
